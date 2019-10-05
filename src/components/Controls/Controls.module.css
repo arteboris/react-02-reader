@@ -1,0 +1,35 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  min-width: 240px;
+  border: none;
+  padding: 8 px 16px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 3px;
+  background-color: #3884ff;
+  transition: all 200ms ease;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+button[disabled] {
+  pointer-events: none;
+  background-color: #bdbdbd;
+}
+
+.button:hover .button:focus {
+  background-color: #1f65d6;
+}
