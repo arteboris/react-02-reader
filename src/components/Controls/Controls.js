@@ -18,7 +18,7 @@ const Controls = ({ handlePrevPage, handleNextPage, page, total }) => {
           onClick={handleNextPage}
           type="button"
           className={css.button}
-          disabled={page === total}
+          disabled={page + 1 === total}
         >
           Вперед
         </button>

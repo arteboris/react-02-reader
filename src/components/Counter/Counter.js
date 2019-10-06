@@ -6,7 +6,7 @@ const Counter = ({ page, total }) => {
   return (
     <>
       <p className={css.counter}>
-        {page}/{total}
+        {page + 1}/{total}
       </p>
     </>
   );

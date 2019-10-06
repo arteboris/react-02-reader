@@ -6,7 +6,7 @@ import publications from '../publications';
 
 export default class App extends Component {
   state = {
-    page: 1,
+    page: 0,
   };
 
   handleNextPage = () => {
@@ -23,7 +23,7 @@ export default class App extends Component {
 
   render() {
     const { page } = this.state;
-    const total = publications.length - 1;
+    const total = publications.length;
     return (
       <>
         <Reader items={publications} page={page} />
